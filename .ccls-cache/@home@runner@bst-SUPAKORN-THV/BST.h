@@ -132,3 +132,16 @@ void printTree( TreeNodePtr treePtr, int count )
       printTree( treePtr->leftPtr, count ); //Recursion to the right
    };// end if                          
 } // end 
+
+void printTree2( TreeNodePtr treePtr, int count )
+{  
+   // if tree is not empty, then traverse 
+  if ( treePtr != NULL ) {        
+      printTree( treePtr->rightPtr, count+1 ); //Recursion to the left
+     
+      for(int a = 0; a<count; a++) printf("     ");
+      printf("%3d\n",treePtr->data) ;  //print the value
+   
+      printTree( treePtr->leftPtr, count+1 ); //Recursion to the right
+   };// end if                          
+} // end
