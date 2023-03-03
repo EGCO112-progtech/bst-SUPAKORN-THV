@@ -29,6 +29,8 @@ for ( i = 1; i < argc; ++i ) {
 
       printf("\nThe my tree is:\n");
       printTree(b.root, 0);
+      
+      printf("\nThe my tree is:\n");
       printTree2(b.root, 0);
 } // end main
 
